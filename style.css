@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+#title{
+    display: flex;
+    color: #fff;
+    margin-left: 35%;
+    margin-top: 10px;
+    padding-right: -30%;
+}
+
+#title h1{
+    font-size: 50px;
+    font-family: boogaloo,Arial, Helvetica, sans-serif;
+}
+
+#search-button{
+    font-weight: 700;
+    height: 35px;
+}
+
+#search-input{
+    margin-top: 1%;
+    margin-left: 34%;
+    width: 20%;
+    height: 24px;
+}
+
+#weather-data{
+    display: flex;
+    border: 2px solid white;
+    border-radius: 5%;
+    width: 30%;
+    margin-left: 33%;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.city{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: blue;
+}
+
+.left-data p{
+    display: inline;
+    border-right: 1px solid black;
+    font-size: 40px;
+    padding: 20px 10px 20px 0px;
+}
+
+.right-data{
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+#container{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+    #title{
+        display: flex;
+        color: #fff;
+        margin-left: 27%;
+        margin-top: 10px;
+        padding-right: -30%;
+    }
+
+    #weather-data{
+        display: flex;
+        border: 2px solid white;
+        border-radius: 5%;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 10px;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 425px){
+   
+    #title img{
+        margin-left: -30px;
+         width: 40px;
+     }
+ 
+     #title h1{
+         font-size: 20px;
+         font-family: boogaloo,Arial, Helvetica, sans-serif;
+     }
+ 
+     #search-input{
+         margin-top: 1%;
+         margin-left: 20px;
+         width: 50%;
+         height: 24px;
+     }
+ 
+     #weather-data{
+         flex-direction: column;
+         border: 2px solid white;
+         border-radius: 5%;
+         width: 50%;
+         margin-left: 7%;
+         background-color: white;
+     }
+ 
+     .city{
+         margin-bottom: 10px;
+     }
+ 
+     .left-data p{
+         margin-left: 25px;
+         border: none;
+         font-size: 30px;
+     }
+ 
+     .right-data{
+         margin-top: -5px;
+     }
+}
+
+@media screen and (max-width: 375px){
+    
+     #weather-data{
+         margin-left: 8%;
+     }
+}
+
+@media screen and (max-width: 320px){
+    #weather-data{
+        margin-left: 10%;
+    }
+}
